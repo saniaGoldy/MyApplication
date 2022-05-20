@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        genTextViewInfo()
+    }
+
+    private fun genTextViewInfo() {
         val appInfo = buildString {
             append(BuildConfig.BUILD_TYPE)
             append("; ")
